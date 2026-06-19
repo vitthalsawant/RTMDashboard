@@ -67,6 +67,12 @@ import header in dashboard -
 import header in app.ts -
 import dashboard in approute.ts -
 
+19-06-2026
+
+image added in header
+as per header hight and width i set the hight width for image in header.css 
+
+
 
 
 ## Author
