@@ -32,7 +32,6 @@ This project provides the PostgreSQL schema and seed data for monitoring factory
 Deleting an equipment row cascades to its alerts (`ON DELETE CASCADE`).
 
 ## Designing/Setup Frontend structure using commands 
-- 18/06/2026
 
 ng new frontend
 cd frontend 
@@ -59,7 +58,7 @@ mkdir src/app/shared
 
 ng g c shared/header
 
-npm install bootstrap
+
 
 ## Author
 
