@@ -88,6 +88,10 @@ below 3 ( After click open chart )
 
 <img width="1916" height="1074" alt="image" src="https://github.com/user-attachments/assets/f551b070-69ec-4fda-9c9b-5b8d1ffc0f71" />
 
+-----
+
+- backend structure updates 
+- backend in python fast api
 
 
 
