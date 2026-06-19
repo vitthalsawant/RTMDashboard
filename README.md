@@ -33,6 +33,8 @@ Deleting an equipment row cascades to its alerts (`ON DELETE CASCADE`).
 
 ## Designing/Setup Frontend structure using commands 
 
+18-06-2026
+
 ng new frontend
 cd frontend 
 
@@ -57,6 +59,13 @@ ng g c pages/dashboard
 mkdir src/app/shared
 
 ng g c shared/header
+
+npm install bootstrap
+
+Header creted in shared folder -
+import header in dashboard -
+import header in app.ts -
+import dashboard in approute.ts -
 
 
 
