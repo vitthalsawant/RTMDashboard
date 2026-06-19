@@ -72,6 +72,22 @@ import dashboard in approute.ts -
 image added in header
 as per header hight and width i set the hight width for image in header.css 
 
+Top 4 - ( show only count )
+
+ - Total equipment
+  - Running
+  - Stopped
+  - Active Alert
+
+  
+below 3 ( After click open chart )
+
+  - Temperature Trend
+  - equipment status distrubution
+  - production summary
+
+<img width="1916" height="1074" alt="image" src="https://github.com/user-attachments/assets/f551b070-69ec-4fda-9c9b-5b8d1ffc0f71" />
+
 
 
 
