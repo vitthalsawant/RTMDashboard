@@ -33,7 +33,6 @@ Deleting an equipment row cascades to its alerts (`ON DELETE CASCADE`).
 
 ## Designing/Setup Frontend structure using commands 
 
-
 ng new frontend
 cd frontend 
 
@@ -59,7 +58,7 @@ mkdir src/app/shared
 
 ng g c shared/header
 
-'''
+
 
 ## Author
 
