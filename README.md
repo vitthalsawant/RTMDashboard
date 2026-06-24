@@ -93,8 +93,39 @@ below 3 ( After click open chart )
 - backend structure updates 
 - backend in python fast api
 
+23-06-2026
+
+- database design 
+    -  app 
+      - database 
+      - model
+      - router
+      - schema
+   - main.py
+   - config.py
 
 
+
+backend started 
+  python -m venv venv
+  venv\scripts\activate
+  source  venv/bin/activate
+
+pip install fastapi uvicorn sqlalchemy psycopg2-binary python-dotenv pydnotic
+
+pip freeze > requirement.txt
+
+.env - set the database URL
+
+config.py
+import the environment
+
+db.py
+
+create engine - Connects your application to the database
+   crete session and base class 
+
+   
 ## Author
 
 [Vitthal Sawant](https://github.com/vitthalsawant)
