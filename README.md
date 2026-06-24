@@ -106,26 +106,47 @@ below 3 ( After click open chart )
 
 
 
-backend started 
-  python -m venv venv
-  venv\scripts\activate
-  source  venv/bin/activate
+- backend started 
+  - python -m venv venv
+  - venv\scripts\activate
+  - source  venv/bin/activate
 
-pip install fastapi uvicorn sqlalchemy psycopg2-binary python-dotenv pydnotic
+- pip install fastapi uvicorn sqlalchemy psycopg2-binary python-dotenv pydnotic
 
-pip freeze > requirement.txt
+- pip freeze > requirement.txt
 
-.env - set the database URL
+- .env - set the database URL
 
-config.py
-import the environment
+- config.py
+- import the environment
 
-db.py
+- db.py
 
-create engine - Connects your application to the database
-   crete session and base class 
+- create engine - Connects your application to the database
+   - crete session and base class 
 
-   
+
+
+
+
+- creating fast api 
+- set route
+- set function 
+- define class and model
+- end of the function use return to print the data
+
+- in the project 
+- i am desiding the path and function in the router folder
+
+- to write query we are using the class - that is defin e in the  model folder 
+
+- return - at end what we need vales in which format that we are desifing the schema folder - API responce - 
+
+- and all file we need to import in header (from ------import ------)
+
+
+
+
 ## Author
 
 [Vitthal Sawant](https://github.com/vitthalsawant)
