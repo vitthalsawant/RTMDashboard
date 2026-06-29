@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { DashboardSummary } from '../../models/dashboard.model';
 
 @Component({
   selector: 'app-kpi-cards',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './kpi-cards.html',
   styleUrl: './kpi-cards.css',
 })
-export class KpiCards {}
+export class KpiCards {
+  @Input() summary: DashboardSummary | null = null;
+}

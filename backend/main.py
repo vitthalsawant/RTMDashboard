@@ -1,6 +1,8 @@
 """
-[[main.py
-Entry point for the RTM FastAPI backend application.]]
+main.py
+Entry point for the RTM FastAPI backend application.
+Registers all routers and configures CORS so Angular (localhost:4200)
+can communicate with this API (localhost:8000).
 """
 
 from fastapi import FastAPI
@@ -29,6 +31,7 @@ app.add_middleware(
 
 app.include_router(dashboard.router, tags=["Dashboard"])
 app.include_router(equipment.router, tags=["Equipment"])
+app.include_router(charts.router,    tags=["Charts"])
 
 
 @app.get("/")
