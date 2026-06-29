@@ -5,6 +5,8 @@ export interface DashboardSummary {
   active_alerts: number;
 }
 
+
+
 export type EquipmentStatus = 'Running' | 'Stopped' | 'Maintenance';
 
 export interface Equipment {
@@ -29,4 +31,9 @@ export interface DashboardData {
 export interface ProductionItem {
   name: string;
   production: number;
+}
+
+export interface equipmentStatusDistribution {
+  status: string;
+  count: number;
 }

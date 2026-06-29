@@ -1,10 +1,4 @@
-"""
-app/routers/charts.py
-Handles chart data endpoints:
-  - GET /temperature-trend  -> Line chart (last 10 records)
-  - GET /equipment-status   -> Pie chart (status distribution)
-  - GET /production-summary -> Bar chart (per machine production)
-"""
+
 
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
@@ -13,17 +7,14 @@ from typing import List
 
 from app.database.db import get_db
 from app.models.equipment import Equipment
-from app.schemas.dashboard import TemperaturePoint, StatusCount, ProductionItem
+from app.schemas.dashboard import TemperaturePoint, StatusCount, ProductionItem, DashboardSummary
 
 router = APIRouter()
 
 
 @router.get("/temperature-trend", response_model=List[TemperaturePoint])
 def get_temperature_trend(db: Session = Depends(get_db)):
-    """
-    Returns temperature data for the last 10 equipment records.
-    Used to render the Trend Line Chart in Angular.
-    """
+    
     records = (
         db.query(Equipment)
         .filter(Equipment.temperature.isnot(None))
