@@ -4,7 +4,7 @@
     <div class="card dashboard-card">
         <div class="card-body text-center">
             <h5 class="card-title">Total Equipment</h5>
-            <h2>120</h2>
+            <h2>{{ summary?.total_equipment ?? '—' }}</h2>
         </div>
     </div>
 </div>
@@ -13,7 +13,7 @@
     <div class="card dashboard-card">
         <div class="card-body text-center">
             <h5 class="card-title">Running</h5>
-            <h2>85</h2>
+            <h2>{{ summary?.running_equipment ?? '—' }}</h2>
         </div>
     </div>
 </div>
@@ -22,7 +22,7 @@
     <div class="card dashboard-card">
         <div class="card-body text-center">
             <h5 class="card-title">Stopped</h5>
-            <h2>20</h2>
+            <h2>{{ summary?.stopped_equipment ?? '—' }}</h2>
         </div>
     </div>
 </div>
@@ -31,7 +31,7 @@
     <div class="card dashboard-card">
         <div class="card-body text-center">
             <h5 class="card-title">Active Alerts</h5>
-            <h2>3</h2>
+            <h2>{{ summary?.active_alerts ?? '—' }}</h2>
         </div>
     </div>
 </div>

@@ -1,7 +1,22 @@
-<div class="col-md-6">
-    <div class="card">
-        <div class="card-body text-center">
-            <h5 class="card-title">Production summary</h5>
-        </div>
+<div class="row g-3">
+  <div class="col-md-6">
+    <div class="card summary-card" (click)="openChart()">
+      <div class="card-body text-center">
+        <h5 class="card-title">Production summary</h5>
+      </div>
     </div>
+  </div>
+
+  @if (open) {
+    <div class="col-md-6">
+      <div class="card chart-card">
+        <div class="card-body">
+          <h5 class="card-title text-center">Production chart</h5>
+          <div class="chart-wrap">
+            <canvas #canvas></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  }
 </div>
