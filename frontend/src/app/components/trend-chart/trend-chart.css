@@ -1,0 +1,12 @@
+.summary-card {
+    cursor: pointer;
+  }
+  
+  .chart-card {
+    min-height: 320px;
+  }
+  
+  .chart-wrap {
+    height: 260px;
+  }
+  

@@ -37,3 +37,8 @@ export interface equipmentStatusDistribution {
   status: string;
   count: number;
 }
+
+export interface temperatureDistribution {
+  name: string;
+  temperature: number;
+}

@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { DashboardSummary, equipmentStatusDistribution, ProductionItem } from '../models/dashboard.model';
+import { DashboardSummary, equipmentStatusDistribution, ProductionItem, temperatureDistribution } from '../models/dashboard.model';
 
 const API_URL = 'http://localhost:8000';
 
@@ -22,4 +22,7 @@ export class DashboardService {
     return this.http.get<equipmentStatusDistribution[]>(`${API_URL}/equipment-status`);
   }
 
+  getTemperatureDistribution(): Observable<temperatureDistribution[]> {
+    return this.http.get<temperatureDistribution[]>(`${API_URL}/temperature-trend`);
+  }
 }

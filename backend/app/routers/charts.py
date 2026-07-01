@@ -31,10 +31,7 @@ def get_temperature_trend(db: Session = Depends(get_db)):
 
 @router.get("/equipment-status", response_model=List[StatusCount])
 def get_equipment_status(db: Session = Depends(get_db)):
-    """
-    Returns count of equipment grouped by status.
-    Used to render the Pie Chart (Running / Stopped / Maintenance).
-    """
+    
     results = (
         db.query(Equipment.status, func.count(Equipment.id).label("count"))
         .group_by(Equipment.status)
@@ -45,10 +42,7 @@ def get_equipment_status(db: Session = Depends(get_db)):
 
 @router.get("/production-summary", response_model=List[ProductionItem])
 def get_production_summary(db: Session = Depends(get_db)):
-    """
-    Returns production values for each machine.
-    Used to render the Bar Chart in Angular.
-    """
+    
     records = db.query(Equipment).filter(Equipment.production.isnot(None)).all()
     return [
         ProductionItem(name=r.name, production=float(r.production))
